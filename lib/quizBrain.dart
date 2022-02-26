@@ -1,3 +1,7 @@
+// ignore: duplicate_ignore
+// ignore: file_names
+// ignore_for_file: file_names
+
 import 'questions.dart';
 
 class QuizBrain {
@@ -23,11 +27,11 @@ class QuizBrain {
   }
 
   String getQue() {
-    return _queBank[_queNo].qq;
+    return _queBank[_queNo].q;
   }
 
-  bool getAns() {
-    return _queBank[_queNo].aa;
+  bool getAns() { 
+    return _queBank[_queNo].a;
   }
 
   bool isEnd() {
@@ -41,4 +45,5 @@ class QuizBrain {
   void reset() {
     _queNo = 0;
   }
+
 }
